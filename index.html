@@ -1,13 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>single page portfolio</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    
+    <header>
+        <section class="navbar">
+            <h2>AyCode</h2>
+
+            <div class="mobile-navbar">
+
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+
+            </div>
+
+            <nav>
+                <ul class="desktop-navbar">
+                    <li>
+                        <a href="mailto:omololuayk@gmail.com" target="_blank">
+                            Email
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://ayokunnumi-portfolio.vercel.app/" target="_blank">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://hng.tech/learn" target="_blank" data-testid="hngLink">
+                            Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://keyword.dog/" target="_blank" data-testid="keywordLink">
+                            SEO
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://scrapeanyweb.site/" target="_blank" data-testid="scrapeanywebLink">
+                            Website
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <main>
+            <img src="images/myImg.png" id="my-img" alt="Ayokunnumi">
+            <div>
+                <div class="text">
+                    <h3>Hi, I'm Ayo Omololu</h3>
+                    <h4>A FULL STACK DEVELOPER</h4>
+                    <p class="mission-text">
+                        My mission for the next two years is to build a tech startup tackling food hunger. This platform
+                        will connect those with excess food to those in need.
+                    </p>
+                </div>
+                <div class="project-btn">
+                    <button>
+                        <a href="https://ayokunnumi-portfolio.vercel.app/" target="_blank">
+                            VIEW MY PROJECTS
+                        </a>
+                    </button>
+                    <div class="date-time">
+                        <p data-testid="currentTimeUTC">Time: <span id="utc-time"></span></p>
+                        <p data-testid="currentDay">Day: <span id="current-day"></span></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </header>
 </body>
 <script src="index.js"></script>
+
 </html>
